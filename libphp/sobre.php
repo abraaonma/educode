@@ -3,11 +3,7 @@
   <h1 class="h2">Sobre</h1>
   <div class="btn-toolbar mb-2 mb-md-0">
     
+    </div>
   </div>
-</div>
-<h4>Estude!</h4>
-<p>Aqui você encontra materiais para estudo.</p>
-<form action="teste.php" method="POST">
-    <input type="text" name="nome" id="nome"><br>
-    <input type="submit" value="enviar">
-</form>
+  <p>Desenvolvido por Abraão Azevedo</p>
+  <p>&copy; 2020 - EduCode</p>

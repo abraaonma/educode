@@ -56,43 +56,43 @@
         <form method="POST">
         <ul class="nav flex-column">
           <li class="nav-item">
-            <button class="nav-link active">
+            <button class="<?php if(isset($_POST['dados'])){ echo "nav-link active"; }else{ echo "nav-link"; } ?>" name="dados">
               <span data-feather="home"></span>
               Dados da Turma <span class="sr-only">(current)</span>
             </button>
           </li>
           <li class="nav-item">
-            <button class="nav-link" name="materiais">
+            <button class="<?php if(isset($_POST['materiais'])){ echo "nav-link active"; }else{ echo "nav-link"; } ?>" name="materiais">
               <span data-feather="file"></span>
               Materiais
             </button>
           </li>
           <li class="nav-item">
-            <button class="nav-link" name="transmissao">
+            <button class="<?php if(isset($_POST['transmissao'])){ echo "nav-link active"; }else{ echo "nav-link"; } ?>" name="transmissao">
               <span data-feather="users"></span>
               Transmissão
             </button>
           </li>
           <li class="nav-item">
-            <button class="nav-link" name="avaliacoes">
+            <button class="<?php if(isset($_POST['avaliacoes'])){ echo "nav-link active"; }else{ echo "nav-link"; } ?>" name="avaliacoes">
               <span data-feather="file-text"></span>
               Avaliações
             </button>
           </li>
           <li class="nav-item">
-            <button class="nav-link" name="complementos">
+            <button class="<?php if(isset($_POST['complementos'])){ echo "nav-link active"; }else{ echo "nav-link"; } ?>" name="complementos">
               <span data-feather="layers"></span>
               Complementos
             </button>
           </li>
           <li class="nav-item">
-            <button class="nav-link" name="desempenho">
+            <button class="<?php if(isset($_POST['desempenho'])){ echo "nav-link active"; }else{ echo "nav-link"; } ?>" name="desempenho">
               <span data-feather="bar-chart-2"></span>
               Desempenho
             </button>
           </li>
           <li class="nav-item">
-              <button class="nav-link" name="sobre">
+              <button class="<?php if(isset($_POST['sobre'])){ echo "nav-link active"; }else{ echo "nav-link"; } ?>" name="sobre">
                 <span data-feather="list"></span>
                 Sobre
               </button>
