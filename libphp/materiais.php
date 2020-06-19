@@ -5,11 +5,24 @@
     
   </div>
 </div>
-<div class="form-group">
-  <h2>Etapa 1</h2> 
-  <div class="form-group">
-    <input type="submit" class="btn-secondary" value="Excluir Etapa">
-  </div>
+<header>
+<nav>
+    <!--<div class="collapse navbar-collapse" id="navbarCollapse">-->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle h5" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Etapa 1
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="quem-somos.php">Excluir</a>
+            <a class="dropdown-item" href="quem-somos.php">Alterar</a>
+          </div>
+        </li>
+      </ul>
+    <!--</div>-->
+ </nav>
+ </header>
+
   <div class="table-responsive">
   <table class="table">
   <thead>
@@ -33,12 +46,13 @@
   </tbody>
   </table>
 </div>
+
+<h4>Incluir material</h4>
 <form action="teste.php" method="POST">
   <div class="form-group">
-      <input type="text" class="form-control" name="" id="" placeholder="Nome do livro"><br>
-      <input type="text" class="form-control" name="nome" id="nome" placeholder="Link do livro"><br>
+      <input type="text" class="form-control" name="" id="" placeholder="Título do material (livro, slide, etc)"><br>
+      <input type="text" class="form-control" name="nome" id="nome" placeholder="Link do material"><br>
       <textarea name="" class="form-control" placeholder="Observação" id="" cols="30" rows="10"></textarea> <br>
       <input type="submit" class="btn-primary" value="Salvar"> <input type="submit" class="btn-secondary" value="Acrescentar Etapa">
   </div>
 </form>
-
