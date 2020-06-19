@@ -91,12 +91,12 @@
               Complementos
             </button>
           </li>-->
-          <li class="nav-item">
+          <!--<li class="nav-item">
             <button class="<?php if(isset($_POST['desempenho'])){ echo "nav-link active"; }else{ echo "nav-link"; } ?>" name="desempenho">
               <span data-feather="bar-chart-2"></span>
               Desempenho
             </button>
-          </li>
+          </li>-->
           <li class="nav-item">
               <button class="<?php if(isset($_POST['sobre'])){ echo "nav-link active"; }else{ echo "nav-link"; } ?>" name="sobre">
                 <span data-feather="list"></span>
