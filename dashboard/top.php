@@ -55,6 +55,12 @@
       <div class="sidebar-sticky pt-3">
         <form method="POST">
         <ul class="nav flex-column">
+        <li class="nav-item">
+            <button class="<?php if(isset($_POST['escolher'])){ echo "nav-link active"; }else{ echo "nav-link"; } ?>" name="escolher">
+              <span data-feather="home"></span>
+              Escolher Turma <span class="sr-only">(current)</span>
+            </button>
+          </li>
           <li class="nav-item">
             <button class="<?php if(isset($_POST['dados'])){ echo "nav-link active"; }else{ echo "nav-link"; } ?>" name="dados">
               <span data-feather="home"></span>
@@ -79,12 +85,12 @@
               Avaliações
             </button>
           </li>
-          <li class="nav-item">
+          <!--<li class="nav-item">
             <button class="<?php if(isset($_POST['complementos'])){ echo "nav-link active"; }else{ echo "nav-link"; } ?>" name="complementos">
               <span data-feather="layers"></span>
               Complementos
             </button>
-          </li>
+          </li>-->
           <li class="nav-item">
             <button class="<?php if(isset($_POST['desempenho'])){ echo "nav-link active"; }else{ echo "nav-link"; } ?>" name="desempenho">
               <span data-feather="bar-chart-2"></span>

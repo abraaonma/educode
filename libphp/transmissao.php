@@ -5,9 +5,20 @@
     
   </div>
 </div>
-<h4>Estude!</h4>
-<p>Aqui você encontra materiais para estudo.</p>
+<div class="form-group">
+  <h4>Tema: <a href="#">A Administração nos tempos atuais</a></h4>
+  <div class="container">
+  <h6>Data: 01/02/20</h6>
+  <h6>Horário: 18:55h</h6>
+  <h6>Senha da sala: 1234</h6>
+  <a href="#">Excluir transmissão</a>
+</div>
+</div>
 <form action="teste.php" method="POST">
-    <input type="text" name="nome" id="nome"><br>
-    <input type="submit" value="enviar">
+    <input type="text" class="form-control" name="nome" id="nome" placeholder="Tema da transmissão"><br>
+    <input type="text" class="form-control" name="nome" id="nome" placeholder="Dia"><br>
+    <input type="text" class="form-control" name="nome" id="nome" placeholder="Horário"><br>
+    <input type="text" class="form-control" name="nome" id="nome" placeholder="Senha da sala"><br>
+    <input type="text" class="form-control" name="nome" id="nome" placeholder="Link da transmissão"><br>
+    <input type="submit" class="btn-primary" value="Salvar"> <input type="submit" class="btn-secondary" value="Inserir nova transmissão">
 </form>

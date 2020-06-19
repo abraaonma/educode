@@ -5,10 +5,40 @@
     
   </div>
 </div>
-<h4>Estude!</h4>
-<p>Aqui você encontra materiais para estudo.</p>
+<div class="form-group">
+  <h2>Etapa 1</h2> 
+  <div class="form-group">
+    <input type="submit" class="btn-secondary" value="Excluir Etapa">
+  </div>
+  <div class="table-responsive">
+  <table class="table">
+  <thead>
+  <tr>
+      <th scope="row">Livro</th>
+      <td>Excluir</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><a href="#">Livro 01</a></th>
+      <td><a href="#">Excluir</a></td>
+    </tr>
+    <tr>
+      <th scope="row"><a href="#">Livro 02</a></th>
+      <td><a href="#">Excluir</a></td>
+    </tr>
+  </tbody>
+  </table>
+  </thead>
+  </tbody>
+  </table>
+</div>
 <form action="teste.php" method="POST">
-    <input type="text" name="nome" id="nome"><br>
-    <input type="submit" value="enviar">
+  <div class="form-group">
+      <input type="text" class="form-control" name="" id="" placeholder="Nome do livro"><br>
+      <input type="text" class="form-control" name="nome" id="nome" placeholder="Link do livro"><br>
+      <textarea name="" class="form-control" placeholder="Observação" id="" cols="30" rows="10"></textarea> <br>
+      <input type="submit" class="btn-primary" value="Salvar"> <input type="submit" class="btn-secondary" value="Acrescentar Etapa">
+  </div>
 </form>
 
