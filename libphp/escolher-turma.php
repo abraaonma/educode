@@ -23,7 +23,7 @@
 
                   <div class="card mb-4 shadow-sm">
                 
-                    <label style="width:100%; height:255; text-align:center; background-color:#dbdbdb; padding:50px; color:#000; margin:0; font-size: 15pt; font-variant:small-caps; border-radius:3px;" >'. $row['nome_cursos'] .'</label>
+                    <label class="box-label color-tag-defaut">'. $row['nome_cursos'] .'</label>
                 
                   <div class="card-body">
                 
@@ -33,7 +33,7 @@
                     
                       <div class="btn-group">
                       
-                        <button type="button" class="btn btn-success">Entrar na sala</button>
+                        <button type="button" class="btn btn-link">Entrar na sala</button>
                       
                       </div>
                         

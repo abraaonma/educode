@@ -16,6 +16,7 @@
 
     <!-- Bootstrap core CSS -->
 <link href="../assets/dist/css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="../assets/dist/css/color-tag.css">
 
     <style>
       .bd-placeholder-img {
@@ -55,6 +56,12 @@
       <div class="sidebar-sticky pt-3">
         <form method="POST">
         <ul class="nav flex-column">
+        <li class="nav-item">
+            <button class="<?php if(isset($_POST['incluir-turma'])){ echo "nav-link active"; }else{ echo "nav-link"; } ?>" name="incluir-turma">
+              <span data-feather="home"></span>
+              Incluir Turma <span class="sr-only">(current)</span>
+            </button>
+          </li>
         <li class="nav-item">
             <button class="<?php if(isset($_POST['escolher'])){ echo "nav-link active"; }else{ echo "nav-link"; } ?>" name="escolher">
               <span data-feather="home"></span>

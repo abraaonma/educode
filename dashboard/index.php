@@ -2,8 +2,11 @@
 
 <?php
     // Menus do dashboard acionando biblioteca "libphp" a partir da pasta "dashboard"
-    if(isset($_POST['escolher'])){
-        include_once('../libphp/escolherturma.php');
+    if(isset($_POST['incluir-turma'])){
+        include_once('../libphp/incluir-turma.php');
+    }
+    elseif(isset($_POST['escolher'])){
+        include_once('../libphp/escolher-turma.php');
     }
     elseif(isset($_POST['materiais'])){
     include_once('../libphp/materiais.php');
