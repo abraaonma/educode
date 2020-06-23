@@ -3,80 +3,49 @@
   <h1 class="h2">Escolher Turma</h1>
 </div>
 
-<?php
-   // PROJETAR E INCLUIR FUNÇÕES COM WHILE
-  //include_once('functions/conectar.php');
-  //$conectar = new conectar();
-  //$conectar->pdo();
-  //$conectar->dc_cursos();
-?>
+<div class="album py-5 bg-light">      
+  <div class="container">
+    <div class="row">
 
-<div class="album py-5 bg-light">
-    <div class="container">
+      <?php
+        // PROJETAR E INCLUIR FUNÇÕES COM WHILE
+        include_once('functions/conectar.php');
 
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img src="https://antongorlin.com/wp-content/gallery/mountain-landscape/pictures-of-water-mountains.jpg" width="100%" height="225" alt="">
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+        $query = 'SELECT * FROM dc_cursos';
+        $pdo = $conn->prepare($query);
+        $pdo->execute();
+
+        // Montar mosaico (ou TAG's) de cursos
+        while($row = $pdo->fetch())
+        {
+          echo '
+                <div class="col-md-4">
+
+                  <div class="card mb-4 shadow-sm">
+                
+                    <label style="width:100%; height:255; text-align:center; background-color:#dbdbdb; padding:50px; color:#000; margin:0; font-size: 15pt; font-variant:small-caps; border-radius:3px;" >'. $row['nome_cursos'] .'</label>
+                
+                  <div class="card-body">
+                
+                    <!--<p class="card-text">Ente na onda!!!</p>-->
+                  
+                      <div class="d-flex justify-content-between align-items-center">
+                    
+                      <div class="btn-group">
+                      
+                        <button type="button" class="btn btn-success">Entrar na sala</button>
+                      
+                      </div>
+                        
+                        <small class="text-muted">9 mins</small>
+                    
+                      </div>
+                  </div>
+                  </div>
                 </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        
+                  ';
+        }
+      ?>
     </div>
+  </div>
 </div>
-
-
